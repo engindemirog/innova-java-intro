@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: rentacar
+  datasource:
+    url: jdbc:h2:file:/data/rentacardb;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
